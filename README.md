@@ -31,3 +31,8 @@ Hence for effective scheduling algorithm the following conditions should be main
   *  high throughput.
   *  Less turnaround time.
   *  Less waiting time.
+
+## __*OVERVIEW OF THE PROPOSED SYSTEM:*__-
+Response time of RR scheduling algorithm is relatively better, although its performance is very sensitive to time-slice. If quantum is very short, then the short processes will move through the system quickly and nicely. But if this quantum is so selected that it is not very large in comparison to process switching, then this
+will invite more overhead of dispatching operations including process switches. To overcome all such drawbacks which hinder the better performance of CPU scheduling, new algorithm named OMDRRS “Optimum Multilevel Dynamic Round Robin Scheduling Algorithm” is proposed. This is a pre-emptive scheduling algorithm. OMDRRS algorithm calculates dynamic time slice after every round of execution. The results display robustness of this algorithm. It is an improvement of popularly implemented RR scheduling algorithm. And the process entering the ready state based on its arrival time, burst time and its priority with some weightages. The weightages which I have given is 20% to its arrival time, 30% to burst time and 40% to its priority and 10% to how effective is the dynamic time quantum is, which is suggested by analysing many processes with different values.
+
